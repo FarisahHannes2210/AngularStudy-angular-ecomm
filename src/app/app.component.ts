@@ -1,16 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './components/header/header.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
-  `,
-  styles: [],
+  imports: [HeaderComponent],
+  //template: html here
+  template: ` <app-header />`,
+  styles: ``, //can put any className here, each component can have its own style
 })
-export class AppComponent {
+export class AppComponent { //actual class of the component
   title = 'angular-ecomm';
 }
